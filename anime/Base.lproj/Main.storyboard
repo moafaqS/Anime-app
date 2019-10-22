@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watchlist Anime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6v-x8-c5a">
-                                <rect key="frame" x="20" y="74" width="335" height="45.5"/>
+                                <rect key="frame" x="10" y="74" width="355" height="45.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="33"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gGu-4n-uMi">
-                                <rect key="frame" x="20" y="119.5" width="335" height="498.5"/>
+                                <rect key="frame" x="10" y="119.5" width="355" height="498.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8kh-CU-3Jb">
                                     <size key="itemSize" width="111" height="190"/>
@@ -42,7 +42,7 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my-hero-academia-heroes-i58329" translatesAutoresizingMaskIntoConstraints="NO" id="0dT-Zh-BZv">
                                                     <rect key="frame" x="0.0" y="8" width="111" height="140"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="111" id="JJn-fJ-hxn"/>
+                                                        <constraint firstAttribute="width" constant="100" id="JJn-fJ-hxn"/>
                                                         <constraint firstAttribute="height" constant="140" id="woE-LD-eWx"/>
                                                     </constraints>
                                                 </imageView>
@@ -78,12 +78,12 @@
                         <color key="backgroundColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="t6v-x8-c5a" firstAttribute="top" secondItem="WLO-XA-6bf" secondAttribute="top" constant="30" id="6vd-1g-JPf"/>
-                            <constraint firstItem="gGu-4n-uMi" firstAttribute="leading" secondItem="WLO-XA-6bf" secondAttribute="leading" constant="20" id="GGQ-hP-Bmj"/>
-                            <constraint firstItem="WLO-XA-6bf" firstAttribute="trailing" secondItem="t6v-x8-c5a" secondAttribute="trailing" constant="20" id="SGS-aD-mMY"/>
+                            <constraint firstItem="gGu-4n-uMi" firstAttribute="leading" secondItem="WLO-XA-6bf" secondAttribute="leading" constant="10" id="GGQ-hP-Bmj"/>
+                            <constraint firstItem="WLO-XA-6bf" firstAttribute="trailing" secondItem="t6v-x8-c5a" secondAttribute="trailing" constant="10" id="SGS-aD-mMY"/>
                             <constraint firstItem="gGu-4n-uMi" firstAttribute="top" secondItem="t6v-x8-c5a" secondAttribute="bottom" id="W26-4e-cCS"/>
-                            <constraint firstItem="WLO-XA-6bf" firstAttribute="trailing" secondItem="gGu-4n-uMi" secondAttribute="trailing" constant="20" id="YBm-Nr-5pc"/>
+                            <constraint firstItem="WLO-XA-6bf" firstAttribute="trailing" secondItem="gGu-4n-uMi" secondAttribute="trailing" constant="10" id="YBm-Nr-5pc"/>
                             <constraint firstItem="WLO-XA-6bf" firstAttribute="bottom" secondItem="gGu-4n-uMi" secondAttribute="bottom" id="diD-8r-dnt"/>
-                            <constraint firstItem="t6v-x8-c5a" firstAttribute="leading" secondItem="WLO-XA-6bf" secondAttribute="leading" constant="20" id="jCs-cK-T9H"/>
+                            <constraint firstItem="t6v-x8-c5a" firstAttribute="leading" secondItem="WLO-XA-6bf" secondAttribute="leading" constant="10" id="jCs-cK-T9H"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WLO-XA-6bf"/>
                     </view>
@@ -921,7 +921,7 @@
         <image name="list.dash" catalog="system" width="64" height="42"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="my-hero-academia-heroes-i58329" width="400" height="600"/>
-        <image name="notInWatchList" width="150" height="150"/>
+        <image name="notInWatchList" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="BTO-kH-Zw4"/>
