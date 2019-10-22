@@ -64,11 +64,17 @@ class AnimeViewController: dataViewController {
                         
                     }else{
                         print(error?.localizedDescription)
+                        let alert = UIAlertController(title: "Error", message: "error in getting image", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+                        self.present(alert, animated: true)
                     }
                 }
                 
             }else{
                 print(error?.localizedDescription)
+                let alert = UIAlertController(title: "Error", message: "error in getting data", preferredStyle: .alert)
+                                       alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+                                       self.present(alert, animated: true)
             }
         }
     }

@@ -38,9 +38,16 @@ extension SearchViewController : UITableViewDelegate , UITableViewDataSource{
         let url = URL(string:  animeList[indexPath.row].imageUrl)!
         
         NetworkingClient.getImage(from: url ) { (data, response, error) in
-             DispatchQueue.main.async() {
-               cell.animePoster.image = UIImage(data: data!)
+            if error == nil{
+                DispatchQueue.main.async() {
+                   cell.animePoster.image = UIImage(data: data!)
+                }
+            }else{
+                let alert = UIAlertController(title: "Error", message: "error in getting image", preferredStyle: .alert)
+                                       alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+                                       self.present(alert, animated: true)
             }
+             
         }
     
         return cell
@@ -82,6 +89,10 @@ extension SearchViewController : UISearchBarDelegate{
                     self.tableView.reloadData()
                 }else{
                     print(error?.localizedDescription)
+                    let alert = UIAlertController(title: "Error", message: "error in getting data", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+                    self.present(alert, animated: true)
+                    
                 }
             }
         }

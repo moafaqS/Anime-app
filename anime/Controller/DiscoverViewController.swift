@@ -70,6 +70,9 @@ class DiscoverViewController: UIViewController  , UICollectionViewDataSource , U
             }else{
                 completion([])
                 print(error?.localizedDescription)
+                let alert = UIAlertController(title: "Error", message: "error in getting data", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+                self.present(alert, animated: true)
             }
         }
 
@@ -120,9 +123,16 @@ class DiscoverViewController: UIViewController  , UICollectionViewDataSource , U
                 let url = URL(string:  array[indexPath.row].imageUrl)!
                 
                 NetworkingClient.getImage(from: url ) { (data, response, error) in
-                     DispatchQueue.main.async() {
-                       cell.animePoster.image = UIImage(data: data!)
+                    if error == nil{
+                        DispatchQueue.main.async() {
+                           cell.animePoster.image = UIImage(data: data!)
+                        }
+                    }else{
+                        let alert = UIAlertController(title: "Error", message: "error in getting image", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+                        self.present(alert, animated: true)
                     }
+                     
                 }
         
         return cell
