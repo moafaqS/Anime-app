@@ -20,8 +20,10 @@ git clone https://github.com/moafaqS/Anime-app.git
 
 ## Screenshots
 <p align="center">
-<img src="https://raw.githubusercontent.com/moafaqS/udacity-pitch-perfect/master/screenshots/IMG_1545.PNG" width="320">
-<img src="https://raw.githubusercontent.com/moafaqS/udacity-pitch-perfect/master/screenshots/IMG_1546.PNG" width="320">
-<img src="https://raw.githubusercontent.com/moafaqS/udacity-pitch-perfect/master/screenshots/IMG_1547.PNG" width="320">
+<img src="https://raw.githubusercontent.com/moafaqS/udacity-pitch-perfect/master/screenshots/1.png" width="320">
+<img src="https://raw.githubusercontent.com/moafaqS/udacity-pitch-perfect/master/screenshots/2.png" width="320">
+<img src="https://raw.githubusercontent.com/moafaqS/udacity-pitch-perfect/master/screenshots/3.png" width="320">
+<img src="https://raw.githubusercontent.com/moafaqS/udacity-pitch-perfect/master/screenshots/4.png" width="320">
+<img src="https://raw.githubusercontent.com/moafaqS/udacity-pitch-perfect/master/screenshots/5.png" width="320">
 </p>
 
