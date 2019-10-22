@@ -68,14 +68,7 @@ class DiscoverViewController: UIViewController  , UICollectionViewDataSource , U
             if error == nil{
                 completion(animes)
             }else{
-                
                 completion([])
-                
-                let alert = UIAlertController(title: "Error?", message: error?.localizedDescription , preferredStyle: .alert)
-                self.present(alert, animated: true)
-                
-                completion([])
-                
                 print(error?.localizedDescription)
             }
         }
