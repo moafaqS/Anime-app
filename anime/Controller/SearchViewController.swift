@@ -81,6 +81,10 @@ extension SearchViewController : UISearchBarDelegate{
                     searchBar.text = ""
                     self.tableView.reloadData()
                 }else{
+
+                    let alert = UIAlertController(title: "Error?", message: error?.localizedDescription , preferredStyle: .alert)
+                    self.present(alert, animated: true)
+                    
                     print(error?.localizedDescription)
                 }
             }
