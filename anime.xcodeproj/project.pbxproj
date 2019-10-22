@@ -7,25 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1601F138A8E908F1DBA36F83 /* Pods_anime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44E37D19203E93D0ACEEE3E /* Pods_anime.framework */; };
+		6F04A013235EFDEB00FAAD1E /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F04A012235EFDEB00FAAD1E /* SearchCell.swift */; };
+		6F04A015235F2DDE00FAAD1E /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F04A014235F2DDE00FAAD1E /* SearchResponse.swift */; };
+		6F7D5BA7235F741B005DD23A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D5BA6235F741A005DD23A /* DataController.swift */; };
+		6F7D5BAD235F7AAC005DD23A /* WatchlistAnimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D5BAC235F7AAC005DD23A /* WatchlistAnimeCell.swift */; };
+		6F7D5BAF235F89EC005DD23A /* dataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D5BAE235F89EC005DD23A /* dataViewController.swift */; };
+		6F89DD27235D8EE1007F4034 /* AnimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89DD26235D8EE1007F4034 /* AnimeViewController.swift */; };
+		6F89DD2A235D98AE007F4034 /* topResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89DD29235D98AE007F4034 /* topResponse.swift */; };
+		6F89DD2C235D98D9007F4034 /* AnimeDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89DD2B235D98D9007F4034 /* AnimeDetailsResponse.swift */; };
+		6F89DD2E235DCD37007F4034 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89DD2D235DCD37007F4034 /* SearchViewController.swift */; };
+		6F89DD30235DCD57007F4034 /* WatchlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F89DD2F235DCD57007F4034 /* WatchlistViewController.swift */; };
 		6FC3FE68235C914A00725A0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC3FE67235C914A00725A0E /* AppDelegate.swift */; };
 		6FC3FE6A235C914B00725A0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC3FE69235C914B00725A0E /* SceneDelegate.swift */; };
-		6FC3FE6C235C914B00725A0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC3FE6B235C914B00725A0E /* ViewController.swift */; };
+		6FC3FE6C235C914B00725A0E /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC3FE6B235C914B00725A0E /* DiscoverViewController.swift */; };
 		6FC3FE6F235C914B00725A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FC3FE6D235C914B00725A0E /* Main.storyboard */; };
 		6FC3FE72235C914B00725A0E /* anime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FC3FE70235C914B00725A0E /* anime.xcdatamodeld */; };
 		6FC3FE74235C914D00725A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FC3FE73235C914D00725A0E /* Assets.xcassets */; };
 		6FC3FE77235C914D00725A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FC3FE75235C914D00725A0E /* LaunchScreen.storyboard */; };
+		6FC3FE7F235C9A0000725A0E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC3FE7E235C9A0000725A0E /* TabBarViewController.swift */; };
+		6FC3FE84235CA61E00725A0E /* AnimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC3FE83235CA61E00725A0E /* AnimeCell.swift */; };
+		6FC3FE88235CBE3200725A0E /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC3FE87235CBE3200725A0E /* NetworkingClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F947FB877C1351CC1C64025 /* Pods-anime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anime.release.xcconfig"; path = "Target Support Files/Pods-anime/Pods-anime.release.xcconfig"; sourceTree = "<group>"; };
+		6F04A012235EFDEB00FAAD1E /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		6F04A014235F2DDE00FAAD1E /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		6F7D5BA6235F741A005DD23A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		6F7D5BAC235F7AAC005DD23A /* WatchlistAnimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistAnimeCell.swift; sourceTree = "<group>"; };
+		6F7D5BAE235F89EC005DD23A /* dataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataViewController.swift; sourceTree = "<group>"; };
+		6F89DD26235D8EE1007F4034 /* AnimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewController.swift; sourceTree = "<group>"; };
+		6F89DD29235D98AE007F4034 /* topResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topResponse.swift; sourceTree = "<group>"; };
+		6F89DD2B235D98D9007F4034 /* AnimeDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailsResponse.swift; sourceTree = "<group>"; };
+		6F89DD2D235DCD37007F4034 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		6F89DD2F235DCD57007F4034 /* WatchlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistViewController.swift; sourceTree = "<group>"; };
 		6FC3FE64235C914A00725A0E /* anime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FC3FE67235C914A00725A0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FC3FE69235C914B00725A0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6FC3FE6B235C914B00725A0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6FC3FE6B235C914B00725A0E /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		6FC3FE6E235C914B00725A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6FC3FE71235C914B00725A0E /* anime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = anime.xcdatamodel; sourceTree = "<group>"; };
 		6FC3FE73235C914D00725A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FC3FE76235C914D00725A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FC3FE78235C914D00725A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FC3FE7E235C9A0000725A0E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		6FC3FE83235CA61E00725A0E /* AnimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCell.swift; sourceTree = "<group>"; };
+		6FC3FE87235CBE3200725A0E /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
+		90B870428DB7556FA29851BB /* Pods-anime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anime.debug.xcconfig"; path = "Target Support Files/Pods-anime/Pods-anime.debug.xcconfig"; sourceTree = "<group>"; };
+		A44E37D19203E93D0ACEEE3E /* Pods_anime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_anime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +63,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1601F138A8E908F1DBA36F83 /* Pods_anime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A03AE30EEA5EE6DF893579A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A44E37D19203E93D0ACEEE3E /* Pods_anime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4889EC528F14837CCBC77C8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90B870428DB7556FA29851BB /* Pods-anime.debug.xcconfig */,
+				4F947FB877C1351CC1C64025 /* Pods-anime.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6F89DD28235D9879007F4034 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6F89DD29235D98AE007F4034 /* topResponse.swift */,
+				6F89DD2B235D98D9007F4034 /* AnimeDetailsResponse.swift */,
+				6F04A014235F2DDE00FAAD1E /* SearchResponse.swift */,
+				6FC3FE70235C914B00725A0E /* anime.xcdatamodeld */,
+				6F7D5BA6235F741A005DD23A /* DataController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6FC3FE5B235C914A00725A0E = {
 			isa = PBXGroup;
 			children = (
 				6FC3FE66235C914A00725A0E /* anime */,
 				6FC3FE65235C914A00725A0E /* Products */,
+				4889EC528F14837CCBC77C8A /* Pods */,
+				1A03AE30EEA5EE6DF893579A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +120,49 @@
 		6FC3FE66235C914A00725A0E /* anime */ = {
 			isa = PBXGroup;
 			children = (
+				6F89DD28235D9879007F4034 /* Model */,
+				6FC3FE86235CBE2400725A0E /* API */,
+				6FC3FE85235CBD8400725A0E /* Controller */,
+				6FC3FE82235CA5FE00725A0E /* View */,
 				6FC3FE67235C914A00725A0E /* AppDelegate.swift */,
 				6FC3FE69235C914B00725A0E /* SceneDelegate.swift */,
-				6FC3FE6B235C914B00725A0E /* ViewController.swift */,
 				6FC3FE6D235C914B00725A0E /* Main.storyboard */,
 				6FC3FE73235C914D00725A0E /* Assets.xcassets */,
 				6FC3FE75235C914D00725A0E /* LaunchScreen.storyboard */,
 				6FC3FE78235C914D00725A0E /* Info.plist */,
-				6FC3FE70235C914B00725A0E /* anime.xcdatamodeld */,
 			);
 			path = anime;
+			sourceTree = "<group>";
+		};
+		6FC3FE82235CA5FE00725A0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6FC3FE83235CA61E00725A0E /* AnimeCell.swift */,
+				6F04A012235EFDEB00FAAD1E /* SearchCell.swift */,
+				6F7D5BAC235F7AAC005DD23A /* WatchlistAnimeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6FC3FE85235CBD8400725A0E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6FC3FE7E235C9A0000725A0E /* TabBarViewController.swift */,
+				6FC3FE6B235C914B00725A0E /* DiscoverViewController.swift */,
+				6F89DD26235D8EE1007F4034 /* AnimeViewController.swift */,
+				6F89DD2D235DCD37007F4034 /* SearchViewController.swift */,
+				6F89DD2F235DCD57007F4034 /* WatchlistViewController.swift */,
+				6F7D5BAE235F89EC005DD23A /* dataViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6FC3FE86235CBE2400725A0E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6FC3FE87235CBE3200725A0E /* NetworkingClient.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FC3FE7B235C914D00725A0E /* Build configuration list for PBXNativeTarget "anime" */;
 			buildPhases = (
+				BA4EF118BFF4619206FB8E0F /* [CP] Check Pods Manifest.lock */,
 				6FC3FE60235C914A00725A0E /* Sources */,
 				6FC3FE61235C914A00725A0E /* Frameworks */,
 				6FC3FE62235C914A00725A0E /* Resources */,
@@ -136,15 +232,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BA4EF118BFF4619206FB8E0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-anime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6FC3FE60235C914A00725A0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F7D5BAD235F7AAC005DD23A /* WatchlistAnimeCell.swift in Sources */,
+				6F04A015235F2DDE00FAAD1E /* SearchResponse.swift in Sources */,
+				6F89DD2C235D98D9007F4034 /* AnimeDetailsResponse.swift in Sources */,
+				6F89DD2E235DCD37007F4034 /* SearchViewController.swift in Sources */,
 				6FC3FE72235C914B00725A0E /* anime.xcdatamodeld in Sources */,
-				6FC3FE6C235C914B00725A0E /* ViewController.swift in Sources */,
+				6FC3FE6C235C914B00725A0E /* DiscoverViewController.swift in Sources */,
+				6F7D5BAF235F89EC005DD23A /* dataViewController.swift in Sources */,
+				6FC3FE88235CBE3200725A0E /* NetworkingClient.swift in Sources */,
 				6FC3FE68235C914A00725A0E /* AppDelegate.swift in Sources */,
+				6F89DD30235DCD57007F4034 /* WatchlistViewController.swift in Sources */,
+				6FC3FE7F235C9A0000725A0E /* TabBarViewController.swift in Sources */,
+				6F89DD27235D8EE1007F4034 /* AnimeViewController.swift in Sources */,
+				6F7D5BA7235F741B005DD23A /* DataController.swift in Sources */,
+				6FC3FE84235CA61E00725A0E /* AnimeCell.swift in Sources */,
 				6FC3FE6A235C914B00725A0E /* SceneDelegate.swift in Sources */,
+				6F89DD2A235D98AE007F4034 /* topResponse.swift in Sources */,
+				6F04A013235EFDEB00FAAD1E /* SearchCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +420,7 @@
 		};
 		6FC3FE7C235C914D00725A0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90B870428DB7556FA29851BB /* Pods-anime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +439,7 @@
 		};
 		6FC3FE7D235C914D00725A0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F947FB877C1351CC1C64025 /* Pods-anime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
