@@ -14,12 +14,15 @@ class SearchViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
+        
+        activityIndicator.isHidden = true
     }
 }
 
@@ -81,8 +84,13 @@ extension SearchViewController : UISearchBarDelegate{
         let searchString = String(string.filter { !" \n\t\r".contains($0) })
         print(searchString)
         
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+        
         if searchString != ""{
             NetworkingClient.getAnimeSearchResulst(animeName: searchString ) { (searchList, error) in
+                self.activityIndicator.stopAnimating()
+                self.activityIndicator.isHidden = true
                 if error == nil{
                     self.animeList = searchList!
                     searchBar.text = ""

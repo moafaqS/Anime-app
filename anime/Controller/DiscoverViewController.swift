@@ -14,7 +14,8 @@ class DiscoverViewController: UIViewController  , UICollectionViewDataSource , U
     var topUpcoming : [TopAnime] = []
     var topPopular : [TopAnime] = []
     var topRanked : [TopAnime] = []
-
+    @IBOutlet weak var activityController: UIActivityIndicatorView!
+    
     @IBOutlet weak var topAiringCollection: UICollectionView!
     @IBOutlet weak var topUpcomingAnime: UICollectionView!
     @IBOutlet weak var topPopularAnimeCollection: UICollectionView!
@@ -22,6 +23,9 @@ class DiscoverViewController: UIViewController  , UICollectionViewDataSource , U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        activityController.startAnimating()
       
         topAiringCollection.dataSource = self
         topAiringCollection.delegate = self
@@ -65,6 +69,8 @@ class DiscoverViewController: UIViewController  , UICollectionViewDataSource , U
     
     func getData(topType : NetworkingClient.topAnime , completion : @escaping ([TopAnime]) -> Void){
         NetworkingClient.getAnimeTop(topType: topType) { (animes, error) in
+            self.activityController.stopAnimating()
+            self.activityController.isHidden = true
             if error == nil{
                 completion(animes)
             }else{

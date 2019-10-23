@@ -364,6 +364,14 @@
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="fKb-3J-XUq">
+                                                <rect key="frame" x="139" y="73" width="136" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="136" id="dVk-q1-Hfl"/>
+                                                    <constraint firstAttribute="height" constant="33" id="hdA-gw-Ljv"/>
+                                                </constraints>
+                                                <color key="color" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </activityIndicatorView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -383,12 +391,14 @@
                                             <constraint firstItem="X3J-Yx-kyi" firstAttribute="leading" secondItem="F3d-kV-tFS" secondAttribute="leading" constant="20" id="NJp-zo-7QE"/>
                                             <constraint firstItem="OUX-ZQ-7Cr" firstAttribute="leading" secondItem="F3d-kV-tFS" secondAttribute="leading" constant="20" id="ODt-eW-M4N"/>
                                             <constraint firstAttribute="trailing" secondItem="dKM-kw-Ri4" secondAttribute="trailing" constant="20" id="P59-wo-GQD"/>
+                                            <constraint firstItem="fKb-3J-XUq" firstAttribute="centerX" secondItem="F3d-kV-tFS" secondAttribute="centerX" id="Ut6-9m-NxS"/>
                                             <constraint firstItem="60x-5e-16h" firstAttribute="leading" secondItem="F3d-kV-tFS" secondAttribute="leading" constant="20" id="W1S-0D-qrW"/>
                                             <constraint firstAttribute="trailing" secondItem="X3J-Yx-kyi" secondAttribute="trailing" constant="20" id="auh-RZ-KX5"/>
                                             <constraint firstAttribute="trailing" secondItem="60x-5e-16h" secondAttribute="trailing" constant="20" id="bKZ-q5-fpO"/>
                                             <constraint firstItem="sRy-0v-SDC" firstAttribute="top" secondItem="dKM-kw-Ri4" secondAttribute="bottom" constant="15" id="cku-bG-7bC"/>
                                             <constraint firstAttribute="trailing" secondItem="sRy-0v-SDC" secondAttribute="trailing" constant="20" id="dvv-wG-QHy"/>
                                             <constraint firstAttribute="bottom" secondItem="sRy-0v-SDC" secondAttribute="bottom" constant="147.5" id="fj8-ac-M6t"/>
+                                            <constraint firstItem="fKb-3J-XUq" firstAttribute="top" secondItem="F3d-kV-tFS" secondAttribute="top" constant="73" id="hfH-TF-7oB"/>
                                             <constraint firstItem="atr-U8-TQF" firstAttribute="top" secondItem="0o1-cP-uEo" secondAttribute="bottom" constant="30" id="hsm-wt-Wlp"/>
                                             <constraint firstItem="d9A-6R-Plx" firstAttribute="leading" secondItem="F3d-kV-tFS" secondAttribute="leading" constant="20" id="pFm-u8-9Sd"/>
                                             <constraint firstItem="0o1-cP-uEo" firstAttribute="top" secondItem="OUX-ZQ-7Cr" secondAttribute="bottom" constant="15" id="rSb-KE-i6j"/>
@@ -422,6 +432,7 @@
                     <navigationItem key="navigationItem" id="Mn3-6s-vdY"/>
                     <size key="freeformSize" width="414" height="1300"/>
                     <connections>
+                        <outlet property="activityController" destination="fKb-3J-XUq" id="VAm-eF-ioi"/>
                         <outlet property="topAiringCollection" destination="0o1-cP-uEo" id="2GM-g9-66v"/>
                         <outlet property="topPopularAnimeCollection" destination="60x-5e-16h" id="0v9-6U-V9i"/>
                         <outlet property="topRankedAnimeCollection" destination="sRy-0v-SDC" id="LPk-Kj-n6w"/>
@@ -690,13 +701,23 @@
                                                     <constraint firstAttribute="trailing" secondItem="lxq-1w-4nh" secondAttribute="trailing" constant="8" id="wGA-mZ-jGf"/>
                                                 </constraints>
                                             </view>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="QsI-vU-zmj">
+                                                <rect key="frame" x="119.5" y="19" width="136" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="136" id="1so-Dn-kbX"/>
+                                                    <constraint firstAttribute="height" constant="33" id="mvG-fd-cgo"/>
+                                                </constraints>
+                                                <color key="color" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </activityIndicatorView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
+                                            <constraint firstItem="QsI-vU-zmj" firstAttribute="top" secondItem="nub-2Q-jBp" secondAttribute="top" constant="19" id="TEG-Zw-i9t"/>
                                             <constraint firstItem="8c7-jv-mWP" firstAttribute="top" secondItem="nub-2Q-jBp" secondAttribute="top" constant="177" id="TxD-es-wRL"/>
                                             <constraint firstAttribute="trailing" secondItem="8c7-jv-mWP" secondAttribute="trailing" constant="33" id="VFd-Bg-pem"/>
                                             <constraint firstItem="8c7-jv-mWP" firstAttribute="leading" secondItem="nub-2Q-jBp" secondAttribute="leading" constant="33" id="bv0-V3-pw4"/>
                                             <constraint firstAttribute="bottom" secondItem="8c7-jv-mWP" secondAttribute="bottom" constant="243.5" id="ibE-fv-y1M"/>
+                                            <constraint firstItem="QsI-vU-zmj" firstAttribute="centerX" secondItem="nub-2Q-jBp" secondAttribute="centerX" id="jVW-Jz-oGf"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -724,6 +745,7 @@
                     <navigationItem key="navigationItem" id="0kO-8K-edl"/>
                     <size key="freeformSize" width="375" height="1300"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="QsI-vU-zmj" id="1ts-3Z-g0h"/>
                         <outlet property="addToWatchList" destination="lxq-1w-4nh" id="BMw-67-YgS"/>
                         <outlet property="animeName" destination="9tF-Il-qaM" id="yw6-N6-JJE"/>
                         <outlet property="animePoster" destination="4cV-sO-v5c" id="adt-Ec-dYk"/>
@@ -755,6 +777,15 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="530"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="9u3-Ih-I00">
+                                    <rect key="frame" x="0.0" y="160" width="375" height="114"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="136" id="XID-TT-1nj"/>
+                                        <constraint firstAttribute="height" constant="33" id="eaU-NN-4MS"/>
+                                    </constraints>
+                                    <color key="color" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </activityIndicatorView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCell" rowHeight="104" id="XWM-FX-LxV" customClass="SearchCell" customModule="anime" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="104"/>
@@ -820,6 +851,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="b5D-Ck-riH"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="9u3-Ih-I00" id="awt-xE-lBl"/>
                         <outlet property="searchBar" destination="yNw-CT-weM" id="1dD-Bc-kAg"/>
                         <outlet property="tableView" destination="sp9-5o-tso" id="eLl-z1-62q"/>
                         <segue destination="gNv-oi-Zzk" kind="show" identifier="toSearchDetails" id="c9L-xZ-oEp"/>
@@ -924,6 +956,6 @@
         <image name="notInWatchList" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BTO-kH-Zw4"/>
+        <segue reference="v0y-e4-YVl"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -31,9 +31,20 @@ class AnimeViewController: dataViewController {
     var addedToWatchList = false
     var watchListAnime : Anime!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     fileprivate func getDataFromAPI() {
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+        
         NetworkingClient.getAnimeDetails(animeID: animeID) { (anime, error) in
+            self.activityIndicator.isHidden = true
+            self.activityIndicator.stopAnimating()
+            
             if error == nil{
+                
+               
+                
                 
                 self.animeName.text = anime!.title
                 self.type.text = anime!.type
@@ -81,6 +92,7 @@ class AnimeViewController: dataViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.activityIndicator.isHidden = true
         synopsis.delegate = self
         let image = addedToWatchList ? UIImage(named: "inWatchList") : UIImage(named: "notInWatchList")
         addToWatchList.setImage(image, for: .normal)
