@@ -7,9 +7,9 @@ The Anime app is simple app for anime fan that track anime series and movies
 
 ## Requirements
 
-### iOS Device with ios 13 or greater
-### XCode 11 or greater should be install 
-### Swift 5
+#### iOS Device with ios 13 or greater
+#### XCode 11 or greater should be install 
+#### Swift 5
 
 ## Installation
 Run this command to install the app on laptop
