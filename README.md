@@ -12,7 +12,7 @@ The Anime app is simple app for anime fan that track anime series and movies
 #### Swift 5
 
 ## Installation
-Run this command to install the app on laptop
+Run this command to install the app on Mac
 ```bash
 git clone https://github.com/moafaqS/Anime-app.git
 ```
